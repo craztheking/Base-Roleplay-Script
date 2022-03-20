@@ -4,7 +4,7 @@
  * http://forum.sa-mp.com/member.php?u=179165
  *
  *	Script begun: August 11th, 2017
- *  Last update: September 12th, 2017
+ *  Last update: March 20th, 2022
  *  Release date: September 12th, 2017
  *	
  *	
@@ -27,6 +27,10 @@
 	#define MAX_PLAYERS  (50)
 	
 native gpci(playerid, serial[], len);
+
+#if !defined IsValidVehicle
+native IsValidVehicle(vehicleid);
+#endif
 
 //Database establisher:
 new ourConnection; 
